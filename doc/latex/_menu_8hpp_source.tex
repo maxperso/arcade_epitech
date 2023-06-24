@@ -1,0 +1,38 @@
+\doxysection{Menu.\+hpp}
+\hypertarget{_menu_8hpp_source}{}\label{_menu_8hpp_source}\index{src/Games/Menu/Menu.hpp@{src/Games/Menu/Menu.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ menu\ header\ file}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ Menu}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}../IGameLib.hpp"{}}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../../Graphics/IGraphicLib.hpp"{}}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_arcade}{Arcade}}\ \{}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_arcade_1_1_m_e_n_u}{MENU}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{IGameLib}}\ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_arcade_1_1_m_e_n_u}{MENU}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_arcade_1_1_m_e_n_u}{\string~MENU}}();}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ counter;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ std::string\ getName()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ init(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ directions\_assigner(\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade::Keys}}\ key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ collisions()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ drawSnake(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib,\ \textcolor{keywordtype}{int}\ snake\_body\_x,\ \textcolor{keywordtype}{int}\ snake\_body\_y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ end\_game\_score(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ change\_libs(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib,\ \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade::Keys}}\ key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ map\_creator(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00031\ \ \ \ \ \};}
+\DoxyCodeLine{00032\ \}}
+
+\end{DoxyCode}

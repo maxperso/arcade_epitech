@@ -1,0 +1,73 @@
+\doxysection{IGame\+Lib.\+hpp}
+\hypertarget{_i_game_lib_8hpp_source}{}\label{_i_game_lib_8hpp_source}\index{src/Games/IGameLib.hpp@{src/Games/IGameLib.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ arcade}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ arcade}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00009\ \textcolor{comment}{*\ Interface\ used\ by\ game\ libraries.}}
+\DoxyCodeLine{00010\ \textcolor{comment}{*\ All\ functions\ must\ be\ implemented\ correctly\ for\ the\ kernel\ to\ handle\ the\ game\ libraries.}}
+\DoxyCodeLine{00011\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ "{}../Graphics/IGraphicLib.hpp"{}}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ "{}../include/Assets.hpp"{}}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#include\ <random>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#include\ <chrono>}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\#include\ <thread>}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#include\ <cstdlib>}\ \textcolor{comment}{//\ for\ rand()\ and\ srand()}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\#include\ <ctime>}\ \ \ \textcolor{comment}{//\ for\ time()}}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_arcade}{Arcade}}\ \{}
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_arcade_1_1_i_game_lib}{IGameLib}}\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Purely\ virtual\ class\ that\ serves\ as\ the\ basis\ for\ all\ game\ libraries}}
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{\string~IGameLib}}()\ =\ \textcolor{keywordflow}{default};}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Destructor}}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ IGameLib\ class's\ destructor}}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ std::string\ getName()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Game\ name's\ getter}}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{comment}{//return:\ a\ string\ containing\ the\ name\ of\ the\ game}}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ init(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ =\ 0;}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Initializes\ the\ game}}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ lib:\ the\ graphic\ library\ to\ use}}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{comment}{//return:\ true\ if\ the\ game\ was\ initialized\ correctly,\ false\ otherwise}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ map\_creator(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ =\ 0;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Creates\ the\ map}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ lib:\ the\ graphic\ library\ to\ use}}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ directions\_assigner(\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade::Keys}}\ key)\ =\ 0;}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Assigns\ the\ directions\ to\ the\ snake}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ key:\ the\ key\ pressed\ by\ the\ user}}
+\DoxyCodeLine{00055\ }
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ collisions()\ =\ 0;}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Checks\ for\ collisions}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ drawSnake(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib,\ \textcolor{keywordtype}{int}\ snake\_body\_x,\ \textcolor{keywordtype}{int}\ snake\_body\_y)\ =\ 0;}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Draws\ the\ snake}}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ lib:\ the\ graphic\ library\ to\ use\ and\ the\ snake's\ body's\ coordinates}}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ end\_game\_score(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib)\ =\ 0;}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Displays\ the\ score\ at\ the\ end\ of\ the\ game}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ lib:\ the\ graphic\ library\ to\ use}}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ change\_libs(\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade::IGraphicLib}}\ \&lib,\ \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade::Keys}}\ key)\ =\ 0;}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \textcolor{comment}{//summary:\ Changes\ the\ .so\ file\ of\ the\ graphic\ or\ game\ libraries}}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{comment}{//param\ lib:\ the\ graphical\ interface\ to\ use}}
+\DoxyCodeLine{00070\ }
+\DoxyCodeLine{00071\ \ \ \ \ \};}
+\DoxyCodeLine{00072\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,160 @@
+\doxysection{Arcade\+::NCURSES Class Reference}
+\hypertarget{class_arcade_1_1_n_c_u_r_s_e_s}{}\label{class_arcade_1_1_n_c_u_r_s_e_s}\index{Arcade::NCURSES@{Arcade::NCURSES}}
+Inheritance diagram for Arcade\+::NCURSES\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arcade_1_1_n_c_u_r_s_e_s}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_a01b72ea11760b73bfe40d967eff0bd23}{get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_acf4ad2df345de76f0edda7244b66131a}{pop\+Window}} (std\+::string const \&title, int width, int height) override
+\item 
+\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Keys}} \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_afcd1d5a15e88d0df04b4cf73cbd8d833}{get\+Last\+Event}} () override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_a6f7e7ece8cc0d1164e71b4e48bba03bf}{map\+Manager}} (\mbox{\hyperlink{struct_assets}{Assets}} \&a, int x, int y) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_ad287bc345dce7ffd374dd60d7b33dde8}{draw\+Text}} (std\+::string text, int x, int y) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_abb7e87635203e3657923717728120c7b}{close\+Window}} () override
+\item 
+int \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_ad981ea214bd3007f7bcff4189783ac6a}{select}} (\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key) override
+\item 
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_ac3a33968c408acc3b77bf60ff9a482f5}\label{class_arcade_1_1_n_c_u_r_s_e_s_ac3a33968c408acc3b77bf60ff9a482f5} 
+void {\bfseries print\+File} (\mbox{\hyperlink{struct_assets}{Assets}} \&a, fs\+::path file\+\_\+path, int x, int y)
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s_a86b6d58cc8f21d0dafc36acc7edc4660}{refresh}} () override
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_aecc266c4ac10f07f4cdca023e74e843d}\label{class_arcade_1_1_i_graphic_lib_aecc266c4ac10f07f4cdca023e74e843d} 
+virtual std\+::string {\bfseries get\+Name} () const =0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_a6935f89ebd797e701d6140101746cc99}\label{class_arcade_1_1_i_graphic_lib_a6935f89ebd797e701d6140101746cc99} 
+virtual void {\bfseries pop\+Window} (std\+::string const \&title, int width, int height)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_a801ebd3cff2c861e4b2a1e664c123da7}\label{class_arcade_1_1_i_graphic_lib_a801ebd3cff2c861e4b2a1e664c123da7} 
+virtual \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Keys}} {\bfseries get\+Last\+Event} ()=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_abfe2d784474a091da869377bf7dad735}\label{class_arcade_1_1_i_graphic_lib_abfe2d784474a091da869377bf7dad735} 
+virtual void {\bfseries map\+Manager} (\mbox{\hyperlink{struct_assets}{Assets}} \&a, int x, int y)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_abd397c75448128eaacf460a7603af5c3}\label{class_arcade_1_1_i_graphic_lib_abd397c75448128eaacf460a7603af5c3} 
+virtual void {\bfseries draw\+Text} (std\+::string text, int x, int y)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_afb1aae7f2b47807a3d6f3277a4524e04}\label{class_arcade_1_1_i_graphic_lib_afb1aae7f2b47807a3d6f3277a4524e04} 
+virtual void {\bfseries close\+Window} ()=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_a373fc22f95b60bcdd146dfb24e634491}\label{class_arcade_1_1_i_graphic_lib_a373fc22f95b60bcdd146dfb24e634491} 
+virtual int {\bfseries select} (\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_graphic_lib_ac406b239ecba7dc5bea28cbccc2943bf}\label{class_arcade_1_1_i_graphic_lib_ac406b239ecba7dc5bea28cbccc2943bf} 
+virtual void {\bfseries refresh} ()=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a752e5c162215df26237e8083af4c015d}\label{class_arcade_1_1_n_c_u_r_s_e_s_a752e5c162215df26237e8083af4c015d} 
+int {\bfseries lib\+\_\+count}
+\item 
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a4a432cc466ad3685714b943066ff6e9a}\label{class_arcade_1_1_n_c_u_r_s_e_s_a4a432cc466ad3685714b943066ff6e9a} 
+std\+::string {\bfseries win\+\_\+title}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a5adf6846c680b66b9d928ab6cd837910}\label{class_arcade_1_1_n_c_u_r_s_e_s_a5adf6846c680b66b9d928ab6cd837910} 
+static WINDOW \texorpdfstring{$\ast$}{*} {\bfseries win} = nullptr
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_abb7e87635203e3657923717728120c7b}\label{class_arcade_1_1_n_c_u_r_s_e_s_abb7e87635203e3657923717728120c7b} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!closeWindow@{closeWindow}}
+\index{closeWindow@{closeWindow}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{closeWindow()}{closeWindow()}}
+{\footnotesize\ttfamily void Arcade\+::\+NCURSES\+::close\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_ad287bc345dce7ffd374dd60d7b33dde8}\label{class_arcade_1_1_n_c_u_r_s_e_s_ad287bc345dce7ffd374dd60d7b33dde8} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!drawText@{drawText}}
+\index{drawText@{drawText}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{drawText()}{drawText()}}
+{\footnotesize\ttfamily void Arcade\+::\+NCURSES\+::draw\+Text (\begin{DoxyParamCaption}\item[{std\+::string}]{text,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_afcd1d5a15e88d0df04b4cf73cbd8d833}\label{class_arcade_1_1_n_c_u_r_s_e_s_afcd1d5a15e88d0df04b4cf73cbd8d833} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!getLastEvent@{getLastEvent}}
+\index{getLastEvent@{getLastEvent}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{getLastEvent()}{getLastEvent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Keys}} Arcade\+::\+NCURSES\+::get\+Last\+Event (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a01b72ea11760b73bfe40d967eff0bd23}\label{class_arcade_1_1_n_c_u_r_s_e_s_a01b72ea11760b73bfe40d967eff0bd23} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!getName@{getName}}
+\index{getName@{getName}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Arcade\+::\+NCURSES\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a6f7e7ece8cc0d1164e71b4e48bba03bf}\label{class_arcade_1_1_n_c_u_r_s_e_s_a6f7e7ece8cc0d1164e71b4e48bba03bf} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!mapManager@{mapManager}}
+\index{mapManager@{mapManager}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{mapManager()}{mapManager()}}
+{\footnotesize\ttfamily void Arcade\+::\+NCURSES\+::map\+Manager (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_assets}{Assets}} \&}]{a,  }\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_acf4ad2df345de76f0edda7244b66131a}\label{class_arcade_1_1_n_c_u_r_s_e_s_acf4ad2df345de76f0edda7244b66131a} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!popWindow@{popWindow}}
+\index{popWindow@{popWindow}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{popWindow()}{popWindow()}}
+{\footnotesize\ttfamily void Arcade\+::\+NCURSES\+::pop\+Window (\begin{DoxyParamCaption}\item[{std\+::string const \&}]{title,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_a86b6d58cc8f21d0dafc36acc7edc4660}\label{class_arcade_1_1_n_c_u_r_s_e_s_a86b6d58cc8f21d0dafc36acc7edc4660} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!refresh@{refresh}}
+\index{refresh@{refresh}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{refresh()}{refresh()}}
+{\footnotesize\ttfamily void Arcade\+::\+NCURSES\+::refresh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_n_c_u_r_s_e_s_ad981ea214bd3007f7bcff4189783ac6a}\label{class_arcade_1_1_n_c_u_r_s_e_s_ad981ea214bd3007f7bcff4189783ac6a} 
+\index{Arcade::NCURSES@{Arcade::NCURSES}!select@{select}}
+\index{select@{select}!Arcade::NCURSES@{Arcade::NCURSES}}
+\doxysubsubsection{\texorpdfstring{select()}{select()}}
+{\footnotesize\ttfamily int Arcade\+::\+NCURSES\+::select (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Graphics/\+NCURSES/NCurses.\+hpp\item 
+src/\+Graphics/\+NCURSES/NCurses.\+cpp\end{DoxyCompactItemize}

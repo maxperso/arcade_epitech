@@ -1,0 +1,52 @@
+\doxysection{Arcade\+::IGame\+Lib Class Reference}
+\hypertarget{class_arcade_1_1_i_game_lib}{}\label{class_arcade_1_1_i_game_lib}\index{Arcade::IGameLib@{Arcade::IGameLib}}
+
+
+Game libraries virtual class.  
+
+
+
+
+{\ttfamily \#include $<$IGame\+Lib.\+hpp$>$}
+
+Inheritance diagram for Arcade\+::IGame\+Lib\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arcade_1_1_i_game_lib}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a9555a0a50e0f0fbc7960d14f51b07964}\label{class_arcade_1_1_i_game_lib_a9555a0a50e0f0fbc7960d14f51b07964} 
+virtual std\+::string {\bfseries get\+Name} () const =0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_af88c93f9a08bfb2496ad0ce106b9dde2}\label{class_arcade_1_1_i_game_lib_af88c93f9a08bfb2496ad0ce106b9dde2} 
+virtual bool {\bfseries init} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_aa43966ca789f7ea927bc05316ac48307}\label{class_arcade_1_1_i_game_lib_aa43966ca789f7ea927bc05316ac48307} 
+virtual void {\bfseries map\+\_\+creator} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a0115f073a381e741356b48df8bd335c0}\label{class_arcade_1_1_i_game_lib_a0115f073a381e741356b48df8bd335c0} 
+virtual void {\bfseries directions\+\_\+assigner} (\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_ae21a81fff73220c427da6b56736bb989}\label{class_arcade_1_1_i_game_lib_ae21a81fff73220c427da6b56736bb989} 
+virtual void {\bfseries collisions} ()=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a87f7bd332e2687ac0de4ed89b4631bc3}\label{class_arcade_1_1_i_game_lib_a87f7bd332e2687ac0de4ed89b4631bc3} 
+virtual void {\bfseries draw\+Snake} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, int snake\+\_\+body\+\_\+x, int snake\+\_\+body\+\_\+y)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_abd9ac39ae08fb0a1f4821cce60de2ae0}\label{class_arcade_1_1_i_game_lib_abd9ac39ae08fb0a1f4821cce60de2ae0} 
+virtual void {\bfseries end\+\_\+game\+\_\+score} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a7b38f5c3ecac77e3014728608c385f6b}\label{class_arcade_1_1_i_game_lib_a7b38f5c3ecac77e3014728608c385f6b} 
+virtual void {\bfseries change\+\_\+libs} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Game libraries virtual class. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Games/IGame\+Lib.\+hpp\end{DoxyCompactItemize}

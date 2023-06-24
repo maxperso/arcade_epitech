@@ -1,0 +1,172 @@
+\doxysection{Arcade\+::SNAKE Class Reference}
+\hypertarget{class_arcade_1_1_s_n_a_k_e}{}\label{class_arcade_1_1_s_n_a_k_e}\index{Arcade::SNAKE@{Arcade::SNAKE}}
+Inheritance diagram for Arcade\+::SNAKE\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_arcade_1_1_s_n_a_k_e}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a3f7ef46f756cfbd7bd2e2af87b849cde}{get\+Name}} () const override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a78e6e57219b9267dc173520295d8e83e}{map\+\_\+creator}} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a5c2c7276150843ae63d86ec29b0c6d6e}{directions\+\_\+assigner}} (\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a57eb6e32bbc3a44c127b146447af2262}{collisions}} () override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_aa38f3b049eeec88a2ef154c4eac980fc}{draw\+Snake}} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, int snake\+\_\+body\+\_\+x, int snake\+\_\+body\+\_\+y) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_ae8b8b4518efe3aedcca5201ee1793bec}{end\+\_\+game\+\_\+score}} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib) override
+\item 
+void \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a6beb2e68f7ad07fbfa8cdd6c4a0f39dd}{change\+\_\+libs}} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key) override
+\item 
+bool \mbox{\hyperlink{class_arcade_1_1_s_n_a_k_e_a055a07421bbb232234f436cbbcf3bf60}{init}} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib) override
+\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a9555a0a50e0f0fbc7960d14f51b07964}\label{class_arcade_1_1_i_game_lib_a9555a0a50e0f0fbc7960d14f51b07964} 
+virtual std\+::string {\bfseries get\+Name} () const =0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_af88c93f9a08bfb2496ad0ce106b9dde2}\label{class_arcade_1_1_i_game_lib_af88c93f9a08bfb2496ad0ce106b9dde2} 
+virtual bool {\bfseries init} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_aa43966ca789f7ea927bc05316ac48307}\label{class_arcade_1_1_i_game_lib_aa43966ca789f7ea927bc05316ac48307} 
+virtual void {\bfseries map\+\_\+creator} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a0115f073a381e741356b48df8bd335c0}\label{class_arcade_1_1_i_game_lib_a0115f073a381e741356b48df8bd335c0} 
+virtual void {\bfseries directions\+\_\+assigner} (\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_ae21a81fff73220c427da6b56736bb989}\label{class_arcade_1_1_i_game_lib_ae21a81fff73220c427da6b56736bb989} 
+virtual void {\bfseries collisions} ()=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a87f7bd332e2687ac0de4ed89b4631bc3}\label{class_arcade_1_1_i_game_lib_a87f7bd332e2687ac0de4ed89b4631bc3} 
+virtual void {\bfseries draw\+Snake} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, int snake\+\_\+body\+\_\+x, int snake\+\_\+body\+\_\+y)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_abd9ac39ae08fb0a1f4821cce60de2ae0}\label{class_arcade_1_1_i_game_lib_abd9ac39ae08fb0a1f4821cce60de2ae0} 
+virtual void {\bfseries end\+\_\+game\+\_\+score} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib)=0
+\item 
+\Hypertarget{class_arcade_1_1_i_game_lib_a7b38f5c3ecac77e3014728608c385f6b}\label{class_arcade_1_1_i_game_lib_a7b38f5c3ecac77e3014728608c385f6b} 
+virtual void {\bfseries change\+\_\+libs} (\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&lib, \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}} key)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_aed2ed4588c39fb8a5ff921e4e424f9c6}\label{class_arcade_1_1_s_n_a_k_e_aed2ed4588c39fb8a5ff921e4e424f9c6} 
+int {\bfseries snake\+\_\+x} = 4
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a4f3f35236c1b0fc61c30aab18b62a19a}\label{class_arcade_1_1_s_n_a_k_e_a4f3f35236c1b0fc61c30aab18b62a19a} 
+int {\bfseries snake\+\_\+y} = 5
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_adc0c3d54a0351554cc0cb53481d5989c}\label{class_arcade_1_1_s_n_a_k_e_adc0c3d54a0351554cc0cb53481d5989c} 
+int {\bfseries snake\+\_\+body\+\_\+x}
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a0257ae37463d5f67f75072fa7f1ea29a}\label{class_arcade_1_1_s_n_a_k_e_a0257ae37463d5f67f75072fa7f1ea29a} 
+int {\bfseries snake\+\_\+body\+\_\+y}
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a6c55a95ff6f8f0b442ed43475a5c2cf9}\label{class_arcade_1_1_s_n_a_k_e_a6c55a95ff6f8f0b442ed43475a5c2cf9} 
+int {\bfseries food\+\_\+counter} = 0
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a296c2088bcad4b068b216b14f6ee8849}\label{class_arcade_1_1_s_n_a_k_e_a296c2088bcad4b068b216b14f6ee8849} 
+bool {\bfseries north}
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a1b900246580ebf53a90fe7c089708611}\label{class_arcade_1_1_s_n_a_k_e_a1b900246580ebf53a90fe7c089708611} 
+bool {\bfseries south}
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a9513e087e5de81d4454e047026a90458}\label{class_arcade_1_1_s_n_a_k_e_a9513e087e5de81d4454e047026a90458} 
+bool {\bfseries east} = true
+\item 
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_ad3206353265029230a4ba46441c9f850}\label{class_arcade_1_1_s_n_a_k_e_ad3206353265029230a4ba46441c9f850} 
+bool {\bfseries west}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a6beb2e68f7ad07fbfa8cdd6c4a0f39dd}\label{class_arcade_1_1_s_n_a_k_e_a6beb2e68f7ad07fbfa8cdd6c4a0f39dd} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!change\_libs@{change\_libs}}
+\index{change\_libs@{change\_libs}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{change\_libs()}{change\_libs()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::change\+\_\+libs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&}]{lib,  }\item[{\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a57eb6e32bbc3a44c127b146447af2262}\label{class_arcade_1_1_s_n_a_k_e_a57eb6e32bbc3a44c127b146447af2262} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!collisions@{collisions}}
+\index{collisions@{collisions}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{collisions()}{collisions()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::collisions (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a5c2c7276150843ae63d86ec29b0c6d6e}\label{class_arcade_1_1_s_n_a_k_e_a5c2c7276150843ae63d86ec29b0c6d6e} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!directions\_assigner@{directions\_assigner}}
+\index{directions\_assigner@{directions\_assigner}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{directions\_assigner()}{directions\_assigner()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::directions\+\_\+assigner (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade\+::\+Keys}}}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_aa38f3b049eeec88a2ef154c4eac980fc}\label{class_arcade_1_1_s_n_a_k_e_aa38f3b049eeec88a2ef154c4eac980fc} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!drawSnake@{drawSnake}}
+\index{drawSnake@{drawSnake}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{drawSnake()}{drawSnake()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::draw\+Snake (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&}]{lib,  }\item[{int}]{snake\+\_\+body\+\_\+x,  }\item[{int}]{snake\+\_\+body\+\_\+y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_ae8b8b4518efe3aedcca5201ee1793bec}\label{class_arcade_1_1_s_n_a_k_e_ae8b8b4518efe3aedcca5201ee1793bec} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!end\_game\_score@{end\_game\_score}}
+\index{end\_game\_score@{end\_game\_score}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{end\_game\_score()}{end\_game\_score()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::end\+\_\+game\+\_\+score (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a3f7ef46f756cfbd7bd2e2af87b849cde}\label{class_arcade_1_1_s_n_a_k_e_a3f7ef46f756cfbd7bd2e2af87b849cde} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!getName@{getName}}
+\index{getName@{getName}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Arcade\+::\+SNAKE\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a055a07421bbb232234f436cbbcf3bf60}\label{class_arcade_1_1_s_n_a_k_e_a055a07421bbb232234f436cbbcf3bf60} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!init@{init}}
+\index{init@{init}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily bool Arcade\+::\+SNAKE\+::init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+\Hypertarget{class_arcade_1_1_s_n_a_k_e_a78e6e57219b9267dc173520295d8e83e}\label{class_arcade_1_1_s_n_a_k_e_a78e6e57219b9267dc173520295d8e83e} 
+\index{Arcade::SNAKE@{Arcade::SNAKE}!map\_creator@{map\_creator}}
+\index{map\_creator@{map\_creator}!Arcade::SNAKE@{Arcade::SNAKE}}
+\doxysubsubsection{\texorpdfstring{map\_creator()}{map\_creator()}}
+{\footnotesize\ttfamily void Arcade\+::\+SNAKE\+::map\+\_\+creator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{Arcade\+::\+IGraphic\+Lib}} \&}]{lib }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{class_arcade_1_1_i_game_lib}{Arcade\+::\+IGame\+Lib}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Games/\+Snake/Snake.\+hpp\item 
+src/\+Games/\+Snake/Snake.\+cpp\end{DoxyCompactItemize}

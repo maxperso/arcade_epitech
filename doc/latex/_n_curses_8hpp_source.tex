@@ -1,0 +1,42 @@
+\doxysection{NCurses.\+hpp}
+\hypertarget{_n_curses_8hpp_source}{}\label{_n_curses_8hpp_source}\index{src/Graphics/NCURSES/NCurses.hpp@{src/Graphics/NCURSES/NCurses.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*}}
+\DoxyCodeLine{00002\ \textcolor{comment}{**\ EPITECH\ PROJECT,\ 2023}}
+\DoxyCodeLine{00003\ \textcolor{comment}{**\ ncurses\ header\ file}}
+\DoxyCodeLine{00004\ \textcolor{comment}{**\ File\ description:}}
+\DoxyCodeLine{00005\ \textcolor{comment}{**\ ncurses}}
+\DoxyCodeLine{00006\ \textcolor{comment}{*/}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}../IGraphicLib.hpp"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <ncurses.h>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{comment}{//to\ compile,\ use\ these\ flags:\ -\/lncurses}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_arcade}{Arcade}}\ \{}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s}{NCURSES}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_arcade_1_1_i_graphic_lib}{IGraphicLib}}\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s}{NCURSES}}();}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_arcade_1_1_n_c_u_r_s_e_s}{\string~NCURSES}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ WINDOW*\ win;}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ lib\_count;}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ std::string\ win\_title;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ std::string\ getName()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ popWindow(std::string\ \textcolor{keyword}{const}\&\ title,\ \textcolor{keywordtype}{int}\ width,\ \textcolor{keywordtype}{int}\ height)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Keys}}\ getLastEvent()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00028\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ mapManager(\mbox{\hyperlink{struct_assets}{Assets}}\ \&a,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ drawText(std::string\ text,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00030\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ closeWindow()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ select(\mbox{\hyperlink{namespace_arcade_a9b501908b20bc993e4f8226db5323c41}{Arcade::Keys}}\ key)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ printFile(\mbox{\hyperlink{struct_assets}{Assets}}\ \&a,\ fs::path\ file\_path,\ \textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ refresh()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00035\ \ \ \ \ \};}
+\DoxyCodeLine{00036\ \}}
+
+\end{DoxyCode}
